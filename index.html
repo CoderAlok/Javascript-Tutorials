@@ -27,6 +27,11 @@
 			margin-top: 2px;
 		}
 
+		input[type="text"]{
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+		}
+
 	</style>
 
 	<script type="text/javascript">
@@ -45,6 +50,37 @@
 </head>
 <body>
 	<div class="events_test">
+
+		<h2>Keyboard Events</h2>
+		<ul>
+			<li><button onkeydown="Calculate(16);">Key Down</button></li>
+			<li><button onkeyup="Calculate(17);">Key Up</button></li>
+			<li><button onkeypress="Calculate(18);">Key Press</button></li>
+
+			<li><button ondblclick="Calculate(19);">On Double Click</button></li>
+		</ul>
+
+		<ul>
+			<li>
+				<input type="text" name="" id="username" onblur="alert(document.getElementById('username').value);" placeholder="Enter any username" />
+			</li>
+			<li>
+				<input type="text" name="" id="firstname" onblur="document.getElementById('firstname_error').innerHTML = document.getElementById('firstname').value;" />
+				<label id="firstname_error"></label>
+			</li>
+			<li>
+				<input type="" name="" onfocus="">
+			</li>
+		</ul>
+		
+		<ul>
+			<li><b>Alok Das</b></li>
+			<li><i>Debosree Banerjee</i></li>
+			<li><b><i>Priyanka Das</i></b></li>
+			<li><b><i><u>Mithun Das</u></i></b></li>
+		</ul>
+
+
 		<!-- All the mouse event will be depicted here -->
 		<h2>Mouse events</h2>
 		<ul>
@@ -57,24 +93,6 @@
 			<li onmouseover="Calculate(10);">Mouse Over</li>
 			<li onmouseup="Calculate(11);">Mouse Up</li>
 			<li onmousewheel="Calculate(13);">Mouse Wheel</li>
-		</ul>
-
-
-		<h2>Keyboard Events</h2>
-		<ul>
-			<li><button>India</button></li>
-			<li><button>Australia</button></li>
-			<li><button>Austria</button></li>
-			<li><button>Switzerland</button></li>
-			<li><button>Poland</button></li>
-			<li><button>Sweden</button></li>
-		</ul>
-		
-		<ul>
-			<li><b>Alok Das</b></li>
-			<li><i>Debosree Banerjee</i></li>
-			<li><b><i>Priyanka Das</i></b></li>
-			<li><b><i><u>Mithun Das</u></i></b></li>
 		</ul>
 	</div>
 </body>
