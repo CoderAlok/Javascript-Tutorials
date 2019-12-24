@@ -2,11 +2,24 @@
 <html>
 <head>
 	<title>Index</title>
+
+	<script type="text/javascript">
+		
+		// function to calculate teh Square of a number.
+		function testSqr(a){
+			return a*a;
+		}
+
+		function Calculate(x){
+			alert("Result : "+testSqr(x));
+		}
+
+	</script>
 </head>
 <body>
 	<div>
 		<ul>
-			<li>Hitlar</li>
+			<li onclick="Calculate(12);">Hitlar</li>
 			<li>Uruguay</li>
 			<li>Opencv</li>
 		</ul>
