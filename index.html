@@ -13,7 +13,19 @@
 			margin: 0px;
 			padding: 0px;
 			font-family: 'Roboto', sans-serif;
-		}	
+		}
+
+		button{
+			border-radius: 5px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		li{
+			margin-top: 2px;
+		}
 
 	</style>
 
@@ -36,22 +48,33 @@
 		<!-- All the mouse event will be depicted here -->
 		<h2>Mouse events</h2>
 		<ul>
-			<li onclick="Calculate(12);">Hitlar</li>
-			<li onmousedown="Calculate(5);">Uruguay</li>
-			<li onmouseenter="Calculate(5);">Opencv</li>
+			<li onclick="Calculate(12);">On Click</li>
+			<li onmousedown="Calculate(5);">Mouse Down</li>
+			<li onmouseenter="Calculate(6);">Mouse Enter</li>
+			<li onmouseleave="Calculate(7);">Mouse Leave</li>
+			<li onmousemove="Calculate(8);">Mouse Move</li>
+			<li onmouseout="Calculate(9);">Mouse Out</li>
+			<li onmouseover="Calculate(10);">Mouse Over</li>
+			<li onmouseup="Calculate(11);">Mouse Up</li>
+			<li onmousewheel="Calculate(13);">Mouse Wheel</li>
 		</ul>
 
+
+		<h2>Keyboard Events</h2>
 		<ul>
-			<li>India</li>
-			<li>Australia</li>
-			<li>Austria</li>
+			<li><button>India</button></li>
+			<li><button>Australia</button></li>
+			<li><button>Austria</button></li>
+			<li><button>Switzerland</button></li>
+			<li><button>Poland</button></li>
+			<li><button>Sweden</button></li>
 		</ul>
 		
 		<ul>
-			<li>Alok Das</li>
-			<li>Debosree Banerjee</li>
-			<li>Priyanka Das</li>
-			<li>Mithun Das</li>
+			<li><b>Alok Das</b></li>
+			<li><i>Debosree Banerjee</i></li>
+			<li><b><i>Priyanka Das</i></b></li>
+			<li><b><i><u>Mithun Das</u></i></b></li>
 		</ul>
 	</div>
 </body>
